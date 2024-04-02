@@ -1,3 +1,21 @@
+% run this init script in your main file
+
+% INPUT
+% the following inputs are needed (all strings, may be defined for different machines/users/etc. - see getPath.m)
+% paths=struct();
+% paths.specs
+% paths.CpCqCt
+% paths.FSTtmplInputFile
+% paths.FSTnewInputFileDir
+% paths.FSTbin
+% paths.resultsTmpDir
+% paths.parforProgressFile (not needed here but later)
+% paths.results (not needed here but later)
+
+% OUTPUT
+% simOptTmpl (struct with default options)
+
+
 %% add OpenFAST
 
 % remove paths of all OpenFAST binaries
