@@ -2,7 +2,7 @@ OPtoolsWorkDir=fileparts(mfilename('fullpath'));
 
 addpath(fullfile(OPtoolsWorkDir,'sim'));
 addpath(fullfile(OPtoolsWorkDir,'post'));
-
+disp('> OPtools added..')
 
 warning('off','MATLAB:interpn:NaNstrip');
 disp('> MATLAB:interpn:NaNstrip warning disabled..')
