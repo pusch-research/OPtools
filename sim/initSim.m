@@ -48,7 +48,8 @@ end
 tmplDir=fileparts(getPath(paths.FSTtmplInputFile));
 
 fileName_arr=dir(tmplDir);
-for ii=3:length(fileName_arr)
+fileName_arr=fileName_arr(~matches({fileName_arr.name},{'..','.'}));
+for ii=1:length(fileName_arr)
     if fileName_arr(ii).isdir
         [status,msg]=copyfile(fullfile(tmplDir,fileName_arr(ii).name),...
                               fullfile(tmpModelDir,fileName_arr(ii).name));
